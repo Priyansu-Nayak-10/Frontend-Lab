@@ -1,11 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html> <!-- Declares the document type and version of HTML used (HTML5 here) -->
+
+<html lang="en"> <!-- Root element of the HTML document; 'lang="en"' declares the language as English -->
+
+<head> <!-- Metadata about the document, not visible on the page -->
+
+    <meta charset="UTF-8"><!-- Sets character encoding to UTF-8 to support most characters and symbols -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Makes the page responsive by setting the viewport to match device width -->
+
+    <title>Document</title><!-- Sets the title of the webpage shown in the browser tab -->
 </head>
+
 <body>
-    Welcome to HTML Hyper text mark up language
+    <!-- Main visible content of the web page -->
+
+    Welcome to the learning of Html
+    <!-- Plain text displayed on the page -->
+
+    <!-- Heading tags (from biggest to smallest) -->
+    <h1>Heading h1</h1> <!-- Largest heading -->
+    <h2>Heading h2</h2>
+    <h3>Heading h3</h3>
+    <h4>Heading h4</h4>
+    <h5>Heading h5</h5>
+    <h6>Heading h6</h6> <!-- Smallest heading -->
+
+    <!-- Paragraph tag -->
+    <p>This is a paragraph tag = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, illum?</p>
+
+    <!-- Image tags -->
+    <img src="./download (2).jpeg" alt="webdeveloper" height="100"> <!-- Displays a local image with height 100px -->
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Google_logo_(2013-2015).svg" alt="google"height="100"> <!-- Displays an image from a URL -->
+
+    <!-- Line break tag -->
+    <br> <!-- Creates a line break (like pressing Enter) -->
+
+    <!-- Link tags -->
+    <a href="https://www.amazon.com">Amazon</a>                     <!-- Opens Amazon in the same tab -->
+    <a href="https://www.google.com" target="_blank">Google</a>     <!-- Opens Google in a new tab -->
+    <a href="https://www.youtube.com" target="_parent">Youtube</a>  <!-- Opens in the parent frame (used in iframes) -->
+    <a href="https://www.facebook.com" target="_self">Facebook</a>  <!-- Default; opens link in the same frame/tab -->
+    <a href="https://www.instagram.com" target="_top">Instagram</a> <!-- Opens link in full body window (topmost frame) -->
+
+    <!-- Clickable image link -->
+    <a href="https://www.google.com" target="_blank">
+        <img src="Google-PNG-File.png" height="50">
+    </a>
+
+    <hr><!-- Horizontal rule (a horizontal line divider) -->
+
+    <!-- Ordered list (numbered) -->
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ol>
+
+    <!-- Unordered list (bulleted) -->
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- Forms for user input -->
+    <form>
+        <!-- Each input with a label is grouped inside a <div> for better structure -->
+
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="name" placeholder="Enter name" required="true"> <!-- Text input for name with placeholder -->
+        </div>
+
+        <div>
+            <label for="Phone">Phone</label>
+            <input id="phone" type="tel" placeholder="Enter phone no" required>   <!-- Input for phone number -->
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter email" required>  <!-- Email input with validation -->
+        </div>
+
+        <div>
+            <label for="pass">Password</label>
+            <input id="pass" type="password" placeholder="Enter password" required> <!-- Hidden input for password -->
+        </div>
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input id="dob" type="date">  <!-- Date input -->
+        </div>
+
+        <div>
+            <input id="check" type="checkbox" required>
+            <label for="check">I agreed to the terms and conditions</label>  <!-- Checkbox for agreeing terms -->
+        </div>
+
+        <div>
+            <label for="Gender">Gender</label>
+            <input type="radio" id="male" name="Gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender">
+            <label for="female">Female</label>
+            <!-- Radio buttons for gender selection, grouped using the same name -->
+        </div>
+
+        <div>
+            <button>Submit</button><!-- Button to submit the form -->
+        </div>
+
+    </form>
 </body>
 </html>
