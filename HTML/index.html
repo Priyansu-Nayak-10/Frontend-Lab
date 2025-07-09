@@ -5,7 +5,8 @@
 <head> <!-- Metadata about the document, not visible on the page -->
 
     <meta charset="UTF-8"><!-- Sets character encoding to UTF-8 to support most characters and symbols -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Makes the page responsive by setting the viewport to match device width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive by setting the viewport to match device width -->
 
     <title>HTML Practice</title><!-- Sets the title of the webpage shown in the browser tab -->
 </head>
@@ -28,23 +29,25 @@
     <p>This is a paragraph tag = Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, illum?</p>
 
     <!-- Image tags -->
-    <img src="./download (2).jpeg" alt="webdeveloper" height="100"> <!-- Displays a local image with height 100px -->
+    <img src="/Img&MP4/coder.jpeg" alt="webdeveloper" height="100"> <!-- Displays a local image with height 100px -->
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Google_logo_(2013-2015).svg" alt="google"height="100"> <!-- Displays an image from a URL -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Google_logo_(2013-2015).svg" alt="google"
+        height="100"> <!-- Displays an image from a URL -->
 
     <!-- Line break tag -->
     <br> <!-- Creates a line break (like pressing Enter) -->
 
     <!-- Link tags -->
-    <a href="https://www.amazon.com">Amazon</a>                     <!-- Opens Amazon in the same tab -->
-    <a href="https://www.google.com" target="_blank">Google</a>     <!-- Opens Google in a new tab -->
-    <a href="https://www.youtube.com" target="_parent">Youtube</a>  <!-- Opens in the parent frame (used in iframes) -->
-    <a href="https://www.facebook.com" target="_self">Facebook</a>  <!-- Default; opens link in the same frame/tab -->
-    <a href="https://www.instagram.com" target="_top">Instagram</a> <!-- Opens link in full body window (topmost frame) -->
+    <a href="https://www.amazon.com">Amazon</a> <!-- Opens Amazon in the same tab -->
+    <a href="https://www.google.com" target="_blank">Google</a> <!-- Opens Google in a new tab -->
+    <a href="https://www.youtube.com" target="_parent">Youtube</a> <!-- Opens in the parent frame (used in iframes) -->
+    <a href="https://www.facebook.com" target="_self">Facebook</a> <!-- Default; opens link in the same frame/tab -->
+    <a href="https://www.instagram.com" target="_top">Instagram</a>
+    <!-- Opens link in full body window (topmost frame) -->
 
     <!-- Clickable image link -->
     <a href="https://www.google.com" target="_blank">
-        <img src="Google-PNG-File.png" height="50">
+        <img src="/Img&MP4/GoogleLogo.png" height="50">
     </a>
 
     <hr><!-- Horizontal rule (a horizontal line divider) -->
@@ -69,17 +72,18 @@
 
         <div>
             <label for="name">Name</label>
-            <input id="name" type="name" placeholder="Enter name" required="true"> <!-- Text input for name with placeholder -->
+            <input id="name" type="name" placeholder="Enter name" required="true">
+            <!-- Text input for name with placeholder -->
         </div>
 
         <div>
             <label for="Phone">Phone</label>
-            <input id="phone" type="tel" placeholder="Enter phone no" required>   <!-- Input for phone number -->
+            <input id="phone" type="tel" placeholder="Enter phone no" required> <!-- Input for phone number -->
         </div>
 
         <div>
             <label for="email">Email</label>
-            <input type="email" placeholder="Enter email" required>  <!-- Email input with validation -->
+            <input type="email" placeholder="Enter email" required> <!-- Email input with validation -->
         </div>
 
         <div>
@@ -89,12 +93,12 @@
 
         <div>
             <label for="dob">Date of Birth</label>
-            <input id="dob" type="date">  <!-- Date input -->
+            <input id="dob" type="date"> <!-- Date input -->
         </div>
 
         <div>
             <input id="check" type="checkbox" required>
-            <label for="check">I agreed to the terms and conditions</label>  <!-- Checkbox for agreeing terms -->
+            <label for="check">I agreed to the terms and conditions</label> <!-- Checkbox for agreeing terms -->
         </div>
 
         <div>
@@ -105,11 +109,123 @@
             <label for="female">Female</label>
             <!-- Radio buttons for gender selection, grouped using the same name -->
         </div>
+        <!-- Dropdown/select menu -->
+<select name="state" id="loc">
+    <!-- Disabled, selected option used as placeholder -->
+    <option value="" disabled selected>select state</option>
+    <option value="odisha">Odisha</option>
+    <option value="delhi">Delhi</option>
+    <option value="mumbai">Mumbai</option>
+</select>
 
-        <div>
-            <button>Submit</button><!-- Button to submit the form -->
-        </div>
+<div>
+    <button>Submit</button> <!-- Normal submit button inside a form -->
+    <!-- or -->
+    <input type="button" value="submit"> <!-- Another way to create a button -->
+</div>
 
-    </form>
+<!-- Paragraph with text formatting -->
+<p>This is a text with <b> Bold </b>, <i> Italic </i> and <u>underline</u></p>
+<!-- <b>: bold, <i>: italic, <u>: underline -->
+
+<!-- Text size formatting -->
+<big>Welcome</big> <!-- Displays text slightly bigger -->
+<small>Hello Coder</small> <!-- Displays text smaller -->
+
+<!-- Superscript and subscript -->
+<p>I have completed my 6<sup>th</sup> Sem</p> <!-- <sup>: superscript (6th) -->
+<p>Chemical formula of Water is <b>H<sub>2</sub>O</b></p> <!-- <sub>: subscript -->
+
+<!-- <pre>: Preserves formatting and whitespace exactly -->
+<pre>This 
+    is    a
+    text      with spaces
+</pre>
+
+<!-- Semantic structure tags -->
+<header>
+    <h2>My Portfolio</h2> <!-- Top section of a webpage, usually contains logo/title/nav -->
+</header>
+
+<main>
+    <!-- Primary content area -->
+    <section>Section tag: for section of your webpage</section>
+    <!-- Defines a section or block of related content -->
+
+    <article>Article tag: For an article on webpage</article>
+    <!-- Represents independent content like blog posts or news -->
+
+    <aside>Aside tag: for content aside main content mainly for ads</aside>
+    <!-- Content that's related but not central, often used for sidebars -->
+</main>
+
+<footer>
+    <h5>Contact: xyz@gmail.com</h5> <!-- Bottom section of webpage with contact or copyright -->
+</footer>
+
+<!-- List with nested (sub)list -->
+<ol>
+    <h4>Fruits:</h4>
+    <li>mango
+        <ul>
+            <li>Color: Yellow</li>
+        </ul>
+    </li>
+    <li>Apple
+        <ul>
+            <li>Color: Red</li>
+        </ul>
+    </li>
+</ol>
+
+<!-- Simple Table -->
+<table>
+    <caption>Student data</caption> <!-- Title of the table -->
+    <tr>
+        <th>Name</th> <!-- Table header -->
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Xyz</td> <!-- Table data/cell -->
+        <td>21</td>
+    </tr>
+    <tr>
+        <td colspan="2">Thank you</td> <!-- Spans 2 columns -->
+    </tr>
+</table>
+
+<!-- Semantic Table using thead and tbody -->
+<table>
+    <thead> <!-- Table header section -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody> <!-- Table body section -->
+        <tr>
+            <td>xyxz</td>
+            <td>21</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Video tag -->
+<video src="/Img&MP4/bmwm4.mp4" autoplay controls muted loop height="200">Bmw m4</video>
+<!-- autoplay: start playing automatically
+     controls: show play/pause bar
+     muted: muted by default
+     loop: plays again when done -->
+
+<!-- Embed YouTube video using iframe -->
+<iframe width="560" height="315"
+    src="https://www.youtube.com/embed/PRRrlbGCqRU?si=gCdxPBu6AOpcu4n6"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+<!-- iframe: Embeds another webpage or content (like YouTube video) into current page -->
+
 </body>
+
 </html>
