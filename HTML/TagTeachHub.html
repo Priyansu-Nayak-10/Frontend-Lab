@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Course - Basics</title>
+</head>
+
+<body>
+
+    <h1>Who invented HTML</h1>
+    <p>Tim Berners-Lee</p>
+
+    <hr>
+
+    <h1>What is HTML?</h1>
+    <ul>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML is the standard markup language for creating Web pages</li>
+        <li>HTML describes the structure of a Web page</li>
+        <li>HTML consists of a series of elements</li>
+        <li>HTML elements tell the browser how to display the content</li>
+        <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link",
+            etc.</li>
+    </ul>
+
+    <hr>
+
+    <h1>Web Browsers</h1>
+    <ul>
+        <li>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them
+            correctly.</li>
+        <li>A browser does not display the HTML tags, but uses them to determine how to display the document.</li>
+    </ul>
+
+    <hr>
+
+    <h1>HTML Documents</h1>
+    <ul>
+        <li>All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code>.</li>
+        <li>The HTML document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code>.
+        </li>
+        <li>The visible part of the HTML document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>.
+        </li>
+    </ul>
+
+    <hr>
+
+    <h1>The &lt;!DOCTYPE&gt; Declaration</h1>
+    <ul>
+        <li>The <code>&lt;!DOCTYPE&gt;</code> declaration represents the document type, and helps browsers to display
+            web pages correctly.</li>
+        <li>It must only appear once, at the top of the page (before any HTML tags).</li>
+        <li>The <code>&lt;!DOCTYPE&gt;</code> declaration is not case sensitive.</li>
+        <li>The declaration for HTML5 is: <code>&lt;!DOCTYPE html&gt;</code></li>
+    </ul>
+
+    <h2>Example:</h2>
+    <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+    <p>Note: The content inside the <code>&lt;body&gt;</code> section will be displayed in a browser. The content inside
+        the <code>&lt;title&gt;</code> element will be shown in the browser's title bar or in the page's tab.</p>
+
+    <hr>
+
+    <h1>What is an HTML Element?</h1>
+    <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+    <p><code>&lt;tagname&gt; Content goes here... &lt;/tagname&gt;</code></p>
+    <p>The HTML element is everything from the start tag to the end tag:</p>
+    <pre>
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+  </pre>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Start tag</th>
+            <th>Element content</th>
+            <th>End tag</th>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt;</td>
+            <td>My First Heading</td>
+            <td>&lt;/h1&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>My first paragraph.</td>
+            <td>&lt;/p&gt;</td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>none</td>
+            <td>none</td>
+        </tr>
+    </table>
+
+    <p>Note: Some HTML elements have no content (like the <code>&lt;br&gt;</code> element). These elements are called
+        empty elements. Empty elements do not have an end tag!</p>
+
+    <hr>
+
+    <h1>HTML Attributes</h1>
+    <ul>
+        <li>HTML attributes provide additional information about HTML elements.</li>
+        <li>All HTML elements can have attributes.</li>
+        <li>Attributes are always specified in the start tag.</li>
+        <li>Attributes usually come in name/value pairs like: <code>name="value"</code>.</li>
+    </ul>
+
+    <h2>Examples:</h2>
+    <ul>
+        <li>The <code>href</code> attribute of <code>&lt;a&gt;</code> specifies the URL of the page the link goes to.
+        </li>
+        <li>The <code>src</code> attribute of <code>&lt;img&gt;</code> specifies the path to the image to be displayed.
+        </li>
+        <li>The <code>width</code> and <code>height</code> attributes of <code>&lt;img&gt;</code> provide size
+            information for images.</li>
+        <li>The <code>alt</code> attribute of <code>&lt;img&gt;</code> provides an alternate text for an image.</li>
+        <li>The <code>style</code> attribute is used to add styles to an element, such as color, font, size, and more.
+        </li>
+        <li>The <code>lang</code> attribute of the <code>&lt;html&gt;</code> tag declares the language of the Web page.
+        </li>
+        <li>The <code>title</code> attribute defines some extra information about an element.</li>
+    </ul>
+
+    <hr>
+
+    <h1>HTML Headings</h1>
+    <p>HTML headings are defined with the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags.</p>
+    <p><code>&lt;h1&gt;</code> defines the most important heading. <code>&lt;h6&gt;</code> defines the least important
+        heading.</p>
+
+    <h2>Examples:</h2>
+    <ul>
+        <li>&lt;h1&gt;Heading 1&lt;/h1&gt;</li>
+        <li>&lt;h2&gt;Heading 2&lt;/h2&gt;</li>
+        <li>&lt;h3&gt;Heading 3&lt;/h3&gt;</li>
+        <li>&lt;h4&gt;Heading 4&lt;/h4&gt;</li>
+        <li>&lt;h5&gt;Heading 5&lt;/h5&gt;</li>
+        <li>&lt;h6&gt;Heading 6&lt;/h6&gt;</li>
+    </ul>
+    <p>Note: Use HTML headings for headings only. Don't use them just to make text big or bold.</p>
+
+    <hr>
+
+    <h1>HTML Paragraphs</h1>
+    <p>The HTML <code>&lt;p&gt;</code> element defines a paragraph. It always starts on a new line and browsers
+        automatically add some space before and after it.</p>
+
+    <h2>Example:</h2>
+    <pre>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+&lt;p&gt;This is another paragraph.&lt;/p&gt;
+  </pre>
+
+    <p>Paragraphs ignore extra spaces and lines:</p>
+    <pre>
+&lt;p&gt;
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+&lt;/p&gt;
+  </pre>
+
+    <p>If you want the extra spaces and lines to be preserved, use:</p>
+
+    <h2>The HTML &lt;pre&gt; Element</h2>
+    <pre>
+&lt;pre&gt;
+This paragraph
+contains         a lot of spaces
+in the source         code,
+in this the        browser
+does not ignores it.
+&lt;/pre&gt;
+  </pre>
+
+    <hr>
+
+    <h1>HTML Horizontal Rules</h1>
+    <p>The <code>&lt;hr&gt;</code> tag defines a thematic break, often shown as a horizontal line.</p>
+
+    <h2>Example:</h2>
+    <pre>
+&lt;h1&gt;This is heading 1&lt;/h1&gt;
+&lt;p&gt;This is some text.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;This is heading 2&lt;/h2&gt;
+&lt;p&gt;This is some other text.&lt;/p&gt;
+  </pre>
+    <p>The <code>&lt;hr&gt;</code> tag is an empty tag, which means it does not have an end tag.</p>
+    <h1>HTML Line Breaks</h1>
+    <p>The HTML <code>&lt;br&gt;</code> element defines a line break.<br>
+        Use <code>&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+    <p>The <code>&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+
+    <hr>
+
+    <h1>HTML Text Formatting</h1>
+    <p>Formatting elements were designed to display special types of text:</p>
+    <ul>
+        <li><b>&lt;b&gt;</b> - Defines bold text → <b>Bold Text</b></li>
+        <li><strong>&lt;strong&gt;</strong> - Defines important text → <strong>Strong Text</strong></li>
+        <li><i>&lt;i&gt;</i> - Italic text → <i>Italic Text</i></li>
+        <li><em>&lt;em&gt;</em> - Defines emphasized text → <em>Emphasized Text</em></li>
+        <li><mark>&lt;mark&gt;</mark> - Defines marked/highlighted text → <mark>Highlight Text</mark></li>
+        <li><small>&lt;small&gt;</small> - Defines smaller text → <small>Small Text</small></li>
+        <li><big>&lt;big&gt;</big> - Defines a slightly bigger text → <big>Big Text</big></li>
+        <li><del>&lt;del&gt;</del> - Defines deleted text → <del>Deleted Text</del></li>
+        <li><ins>&lt;ins&gt;</ins> - Defines inserted text → <ins>Inserted Text</ins></li>
+        <li><sub>&lt;sub&gt;</sub> - Defines subscripted text → H<sub>2</sub>O</li>
+        <li><sup>&lt;sup&gt;</sup> - Defines superscripted text → 6<sup>th</sup>Sem</li>
+    </ul>
+
+    <hr>
+
+    <h1>HTML Comments</h1>
+    <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+    <p>You can add comments to your HTML source by using the following syntax:</p>
+    <pre>&lt;!-- Write your comments here --&gt;</pre>
+
+    <hr>
+
+    <h1>HTML Links</h1>
+    <p>HTML links are hyperlinks: you can click on a link and jump to another document.</p>
+    <p>When you move the mouse over a link, the cursor turns into a hand.</p>
+    <p><strong>Note:</strong> A link doesn’t have to be text. It can also be an image or any other HTML element!</p>
+
+    <h2>Syntax:</h2>
+    <pre>&lt;a href="url"&gt;link text&lt;/a&gt;</pre>
+
+    <p>The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute, which
+        indicates the link’s destination.</p>
+    <p>Example:</p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h3>Link Colors:</h3>
+    <ul>
+        <li>Unvisited link: underlined and blue</li>
+        <li>Visited link: underlined and purple</li>
+        <li>Active link: underlined and red</li>
+    </ul>
+
+    <h2>target Attribute</h2>
+    <p>The <code>target</code> attribute specifies where to open the linked document:</p>
+    <ul>
+        <li><code>_self</code> – Default. Opens in the same tab</li>
+        <li><code>_blank</code> – Opens in a new tab/window</li>
+        <li><code>_parent</code> – Opens in parent frame</li>
+        <li><code>_top</code> – Opens in full body of window</li>
+    </ul>
+
+    <hr>
+
+    <h1>Absolute vs. Relative URLs</h1>
+    <h2>Absolute URL:</h2>
+    <p>Full address of a resource on the internet.</p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2>Relative URL:</h2>
+    <p>Specifies location of a resource relative to current page.</p>
+    <p><a href="images/logo.png">View Logo</a></p>
+
+    <h3>When to Use Each:</h3>
+    <h4>Use Absolute URLs When:</h4>
+    <ul>
+        <li>Linking to external websites</li>
+        <li>Using APIs or external services</li>
+        <li>Ensuring link works in all contexts (like email)</li>
+    </ul>
+
+    <h4>Use Relative URLs When:</h4>
+    <ul>
+        <li>Linking within the same website</li>
+        <li>In development environments</li>
+        <li>Creating internal site navigation</li>
+    </ul>
+
+    <hr>
+
+    <h1>Link to an Email Address</h1>
+    <p>Use <code>mailto:</code> to open the email app:</p>
+    <p><a href="mailto:someone@example.com">Send email</a></p>
+
+    <hr>
+
+    <h1>Link Titles</h1>
+    <p>The <code>title</code> attribute shows extra info when you hover:</p>
+    <p><a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a></p>
+
+    <hr>
+
+    <h1>HTML Bookmarks</h1>
+    <p>Bookmarks let users jump to a specific part of a long page.</p>
+
+    <h2>Create a Bookmark:</h2>
+    <p>Give an element an <code>id</code>:</p>
+    <pre>&lt;h1 id="end"&gt;End of the page&lt;/h1&gt;</pre>
+
+    <h2>Link to the Bookmark:</h2>
+    <pre>&lt;a href="#end"&gt;Jump to Chapter 4&lt;/a&gt;</pre>
+    <a href="#end">Jump to Chapter 4</a>
+
+    <h2>From Another Page:</h2>
+    <pre>&lt;a href="index2.html#end"&gt;Jump to Chapter 4&lt;/a&gt;</pre>
+
+    <hr>
+
+    <h1 id="end">End of the Page</h1>
+</body>
+
+</html>
